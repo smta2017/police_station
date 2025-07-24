@@ -5,3 +5,10 @@
         <p>Home</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('accuses.index') }}" class="nav-link {{ Request::is('accuses*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-home"></i>
+        <p>@lang('models/accuses.plural')</p>
+    </a>
+</li>
